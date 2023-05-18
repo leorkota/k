@@ -1,0 +1,39 @@
+#pagegrid{
+  display: grid; 
+  grid-template-rows: 4rem auto 45px;
+  grid-template-columns: 16rem auto;
+  
+  grid-template-areas: 
+  'logo header'
+  'sidebar main-content'
+  'sidebar footer';
+
+  gap: 3px;
+  height: 100%;
+   
+}
+
+#pagegrid>*{
+  border-radius:3px;
+}
+  
+#pagegrid>header{
+  background-color: #a3a3a3; 
+  grid-area: header;
+}
+#pagegrid>aside{
+  background-color: #385b94; 
+  grid-area: sidebar;
+}
+#pagegrid>main{
+  background-color: #d0d9e6; 
+  grid-area: main-content;
+}
+#pagegrid>footer{
+  background-color: #151127; 
+  grid-area: footer;
+}
+#pagegrid>#logo{
+  background-color: #2b4c81; 
+  grid-area: logo;
+}
